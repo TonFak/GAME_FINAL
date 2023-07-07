@@ -17,11 +17,13 @@ include_directories("ext/SFML/include/")	# добавляем директори
 include_directories("inc/")
 link_directories("ext/SFML/lib/")	
 
+
 add_executable("${PROJECT_NAME}" main.cpp
 				 game.cpp
 				 game.h
 				 playerr.h
-						 		
+								
+					 						
 )
 	
 target_link_libraries("${PROJECT_NAME}" 
@@ -35,6 +37,7 @@ target_link_libraries("${PROJECT_NAME}"
 						optimized sfml-window-s
 						optimized sfml-system-s
 						optimized sfml-audio-s)
+
 										
 target_link_libraries("${PROJECT_NAME}" sfml-graphics-s-d
 						  sfml-window-s-d
